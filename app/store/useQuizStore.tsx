@@ -84,7 +84,7 @@ export const useQuizStore = create<QuizState>()(
         answers: state.answers,
       }),
       version: 1,
-      migrate: (persistedState: any, version: number) => {
+      migrate: (persistedState: unknown, version: number) => {
         // Handle migration if store structure changes
         if (version === 0) {
           // Reset state if migrating from old version

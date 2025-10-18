@@ -49,10 +49,7 @@ useEffect(() => {
       return;
     }
 
-    if (Quiz && Quiz.id !== resolvedParams.id) {
-      setQuiz(null as any); 
-    }
-
+    // If there's no quiz yet or the current quiz id doesn't match, fetch and set the correct quiz.
     if (!Quiz || Quiz.id !== resolvedParams.id) {
       const data = await fetchQuizzes();
       const found = data.find((q) => q.id === resolvedParams.id);
