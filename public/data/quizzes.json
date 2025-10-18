@@ -1,143 +1,1341 @@
 [
   {
-    "id": "js101",
-    "courseTitle": "JavaScript Basics",
-    "description": "Test your fundamental JavaScript knowledge.",
-    "image": "/assets/quiz-03.png",
-    "duration": 15,
-    "difficulty": "hard",
+    "id": "typescript501",
+    "courseTitle": "TypeScript Foundations",
+    "description": "Test your understanding of TypeScript types and syntax.",
+    "image": "/assets/quiz-05.png",
+    "duration": 20,
+    "difficulty": "normal",
     "questions": [
       {
         "id": "q1",
-        "question": "Which of the following is NOT a JavaScript data type?",
+        "question": "TypeScript is a superset of JavaScript.",
         "options": [
-          "Number",
-          "String",
-          "Boolean",
-          "Character"
+          "True",
+          "False"
         ],
-        "correctAnswer": "Character",
-        "uuid": "a7d5b4d8-5c04-4e91-b699-3e9a0f31508e"
+        "correctAnswer": "True",
+        "uuid": "e296e0d2-9961-4a5c-bd40-7d0f2380a62b"
       },
       {
         "id": "q2",
-        "question": "What will `typeof null` return in JavaScript?",
+        "question": "Which keyword is used to define a type alias?",
         "options": [
-          "'null'",
-          "'undefined'",
-          "'object'",
-          "'number'"
+          "interface",
+          "type",
+          "alias",
+          "define"
         ],
-        "correctAnswer": "'object'",
-        "uuid": "a6112255-ee36-4460-a508-136b0ce372a5"
+        "correctAnswer": "type",
+        "uuid": "44a2c386-004c-401c-9ffd-5e49b437ecea"
       },
       {
         "id": "q3",
-        "question": "Which keyword is used to declare a constant in JavaScript?",
+        "question": "The `any` type disables type checking.",
         "options": [
-          "let",
-          "var",
-          "constant",
-          "const"
+          "True",
+          "False"
         ],
-        "correctAnswer": "const",
-        "uuid": "e1df0514-2044-48fe-b9d3-da1948103756"
+        "correctAnswer": "True",
+        "uuid": "d2e865a5-5d67-4518-aada-4f5179536b01"
+      },
+      {
+        "id": "q4",
+        "question": "What will `let x: number = '5';` cause?",
+        "options": [
+          "A runtime error",
+          "A compile-time error",
+          "No error",
+          "A warning"
+        ],
+        "correctAnswer": "A compile-time error",
+        "uuid": "ef68137d-3136-44f3-a992-6ee0dcea942f"
+      },
+      {
+        "id": "q5",
+        "question": "Which TypeScript feature allows defining a fixed set of possible values?",
+        "options": [
+          "Enum",
+          "Tuple",
+          "Union",
+          "Record"
+        ],
+        "correctAnswer": "Enum",
+        "uuid": "b953b955-c33e-431d-9525-287943e04997"
+      },
+      {
+        "id": "q6",
+        "question": "Interfaces and types can both define object shapes.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "7a516617-ef43-4547-a826-839e9b430846"
+      },
+      {
+        "id": "q7",
+        "question": "Which operator is used for non-null assertion?",
+        "options": [
+          "!",
+          "?",
+          "!!",
+          "??"
+        ],
+        "correctAnswer": "!",
+        "uuid": "ac8ce28e-803f-4f24-9d17-2d8eaf8ad487"
+      },
+      {
+        "id": "q8",
+        "question": "Generics in TypeScript allow functions to work with multiple types.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "8fbe1b42-f5de-4ee2-92ac-ac9ca7a04d72"
+      },
+      {
+        "id": "q9",
+        "question": "What file extension is used for TypeScript files?",
+        "options": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "correctAnswer": ".ts",
+        "uuid": "f03c4dc5-b9db-4dfe-bcdc-f44bf12da1f2"
+      },
+      {
+        "id": "q10",
+        "question": "TypeScript code must be compiled to JavaScript before running in browsers.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "1cf578b8-c9a5-42c0-b437-63e61c7f0497"
       }
     ],
-    "uuid": "4581ebb4-e124-465e-aaa6-35a70a24416b"
+    "uuid": "ca0680ab-32cf-4c24-b835-ba18dc7fb872"
   },
   {
-    "id": "react201",
-    "courseTitle": "React Fundamentals",
-    "description": "Assess your understanding of React core concepts.",
-    "image": "/assets/quiz-02.png",
-    "duration": 10,
+    "id": "git601",
+    "courseTitle": "Git & Version Control",
+    "description": "Assess your Git and collaboration workflow skills.",
+    "image": "/assets/quiz-06.png",
+    "duration": 15,
     "difficulty": "easy",
     "questions": [
       {
         "id": "q1",
-        "question": "What is the purpose of the `useState` hook?",
+        "question": "Which command initializes a new Git repository?",
         "options": [
-          "To perform side effects in a component",
-          "To store and update component state",
-          "To manage routing",
-          "To fetch data from APIs"
+          "git start",
+          "git init",
+          "git create",
+          "git new"
         ],
-        "correctAnswer": "To store and update component state",
-        "uuid": "9f0749c3-8e7d-4eae-87f9-1f58f6661dbe"
+        "correctAnswer": "git init",
+        "uuid": "f8ae4a20-5beb-4a6e-986d-dd10fb8e81fd"
       },
       {
         "id": "q2",
-        "question": "What must be unique for each list item in React?",
+        "question": "The command `git clone` copies a remote repository locally.",
         "options": [
-          "index",
-          "key",
-          "id",
-          "value"
+          "True",
+          "False"
         ],
-        "correctAnswer": "key",
-        "uuid": "f88481f0-3718-4540-beae-73dc8dd9b87b"
+        "correctAnswer": "True",
+        "uuid": "d332bea4-a195-4254-9815-540b172497ef"
       },
       {
         "id": "q3",
-        "question": "Which of the following is a valid React component?",
+        "question": "Which command stages changes for commit?",
         "options": [
-          "function myComponent() {}",
-          "const MyComponent = () => {}",
-          "function my_component() {}",
-          "const myComponent = React.component()"
+          "git commit",
+          "git add",
+          "git push",
+          "git merge"
         ],
-        "correctAnswer": "const MyComponent = () => {}",
-        "uuid": "67159b7e-8152-4d29-882b-33051d6b9550"
+        "correctAnswer": "git add",
+        "uuid": "a2602d98-be5f-46bf-a04f-62f85668bbbc"
+      },
+      {
+        "id": "q4",
+        "question": "Which file is used to ignore files from being committed?",
+        "options": [
+          ".gitignore",
+          "ignore.txt",
+          ".gitconfig",
+          "config.json"
+        ],
+        "correctAnswer": ".gitignore",
+        "uuid": "3741d803-c850-4053-a1fc-ad97077366a2"
+      },
+      {
+        "id": "q5",
+        "question": "Branches in Git allow parallel development.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "61246ddd-abce-4524-b72a-f2b405f43c43"
+      },
+      {
+        "id": "q6",
+        "question": "Which command merges another branch into the current one?",
+        "options": [
+          "git pull",
+          "git push",
+          "git merge",
+          "git branch"
+        ],
+        "correctAnswer": "git merge",
+        "uuid": "7ed905b1-fd4f-4788-8dec-5bf8844f718a"
+      },
+      {
+        "id": "q7",
+        "question": "What does `git status` do?",
+        "options": [
+          "Shows the current branch and staged files",
+          "Commits all changes",
+          "Shows remote branches only",
+          "Deletes local files"
+        ],
+        "correctAnswer": "Shows the current branch and staged files",
+        "uuid": "8654241a-34d9-4fdb-8b4a-775b792d2fdd"
+      },
+      {
+        "id": "q8",
+        "question": "A detached HEAD state occurs when you checkout a specific commit.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "8bcc7ae2-596b-456f-b823-f72c372f4157"
+      },
+      {
+        "id": "q9",
+        "question": "Which command uploads local commits to a remote repository?",
+        "options": [
+          "git fetch",
+          "git upload",
+          "git push",
+          "git send"
+        ],
+        "correctAnswer": "git push",
+        "uuid": "4c978dc6-0bbb-45e7-9dc4-3d828f029055"
+      },
+      {
+        "id": "q10",
+        "question": "Which Git command displays the commit history?",
+        "options": [
+          "git log",
+          "git history",
+          "git commits",
+          "git show"
+        ],
+        "correctAnswer": "git log",
+        "uuid": "396c0130-3962-457b-8a54-cd48471138d2"
       }
     ],
-    "uuid": "261eee90-38bb-4e12-994b-a02c3ed02eb3"
+    "uuid": "8165c081-97f8-4cec-9913-1523a9aa14ff"
   },
   {
-    "id": "htmlcss301",
-    "courseTitle": "HTML & CSS Mastery",
-    "description": "Check your skills in front-end layout and styling.",
-    "image": "/assets/quiz-01.png",
+    "id": "nodejs701",
+    "courseTitle": "Node.js Basics",
+    "description": "Evaluate your understanding of Node.js runtime and core modules.",
+    "image": "/assets/quiz-07.png",
     "duration": 25,
     "difficulty": "normal",
     "questions": [
       {
         "id": "q1",
-        "question": "Which HTML tag is used to define an internal style sheet?",
+        "question": "Node.js is built on the Chrome V8 engine.",
         "options": [
-          "<style>",
-          "<css>",
-          "<script>",
-          "<link>"
+          "True",
+          "False"
         ],
-        "correctAnswer": "<style>",
-        "uuid": "fb365861-7510-4f47-bf82-64c06ef09c92"
+        "correctAnswer": "True",
+        "uuid": "9196d856-ab36-4997-a25a-f2ac33400f07"
       },
       {
         "id": "q2",
-        "question": "Which CSS property controls the text size?",
+        "question": "Which module is used to create a server in Node.js?",
         "options": [
-          "font-weight",
-          "font-style",
-          "text-size",
-          "font-size"
+          "http",
+          "fs",
+          "server",
+          "net"
         ],
-        "correctAnswer": "font-size",
-        "uuid": "b61eed84-cc59-47ec-b710-889bdc4db1ed"
+        "correctAnswer": "http",
+        "uuid": "72ce8a08-8bed-4543-a07a-52019418dfa9"
       },
       {
         "id": "q3",
-        "question": "What does the 'box-sizing: border-box' property do?",
+        "question": "What does `npm` stand for?",
         "options": [
-          "Includes padding and border in total width and height",
-          "Adds margin to the element automatically",
-          "Resets all box properties",
-          "Increases box shadow effect"
+          "Node Package Manager",
+          "Node Process Manager",
+          "New Package Maker",
+          "None"
         ],
-        "correctAnswer": "Includes padding and border in total width and height",
-        "uuid": "e3539970-2479-4c53-b066-d1c758e1614b"
+        "correctAnswer": "Node Package Manager",
+        "uuid": "98421ea9-2fdd-4097-87c3-2b15cd712150"
+      },
+      {
+        "id": "q4",
+        "question": "Node.js runs in the browser.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "uuid": "5c7cf581-019e-42eb-a698-8961baecd5e4"
+      },
+      {
+        "id": "q5",
+        "question": "Which keyword is used to import built-in modules?",
+        "options": [
+          "require",
+          "import",
+          "include",
+          "use"
+        ],
+        "correctAnswer": "require",
+        "uuid": "316ca1e6-d6db-443c-a2e2-9816e315bb98"
+      },
+      {
+        "id": "q6",
+        "question": "Which file is used to define project dependencies?",
+        "options": [
+          "package.json",
+          "index.js",
+          "server.js",
+          "node_modules"
+        ],
+        "correctAnswer": "package.json",
+        "uuid": "db0e959f-54d3-48dd-bf44-7c3a13407609"
+      },
+      {
+        "id": "q7",
+        "question": "Which module is used for file system operations?",
+        "options": [
+          "os",
+          "path",
+          "fs",
+          "stream"
+        ],
+        "correctAnswer": "fs",
+        "uuid": "078818a3-df92-4bf8-9874-5d112a0b8004"
+      },
+      {
+        "id": "q8",
+        "question": "You can run Node.js scripts using the `node` command.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "84350691-f790-495a-b2e4-58b5be62da9c"
+      },
+      {
+        "id": "q9",
+        "question": "Which statement is true about asynchronous programming in Node.js?",
+        "options": [
+          "It blocks the event loop.",
+          "It improves performance for I/O tasks.",
+          "It requires threads for each request.",
+          "It uses synchronous callbacks."
+        ],
+        "correctAnswer": "It improves performance for I/O tasks.",
+        "uuid": "e2e27c04-f59e-4c27-b257-eb2868ae8f2f"
+      },
+      {
+        "id": "q10",
+        "question": "Node.js uses CommonJS modules by default.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "d5451324-66ae-4949-834e-75b24ede6de7"
       }
     ],
-    "uuid": "a8fa6eac-db73-4656-b2c3-742614354d2b"
+    "uuid": "bf491ffe-feac-4430-a197-4be358c43de3"
+  },
+  {
+    "id": "api801",
+    "courseTitle": "REST & API Knowledge",
+    "description": "Test your understanding of REST APIs and HTTP concepts.",
+    "image": "/assets/quiz-08.png",
+    "duration": 15,
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does REST stand for?",
+        "options": [
+          "Representational State Transfer",
+          "Remote Execution Standard Transfer",
+          "Random Encoded Syntax Tree",
+          "Resource Entity Storage Type"
+        ],
+        "correctAnswer": "Representational State Transfer",
+        "uuid": "93ef92fb-30c3-4c1f-8376-d8dec0d8695e"
+      },
+      {
+        "id": "q2",
+        "question": "Which HTTP method is used to retrieve data?",
+        "options": [
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE"
+        ],
+        "correctAnswer": "GET",
+        "uuid": "67ac4593-3c3c-4226-a0b5-e3a10b2d96ce"
+      },
+      {
+        "id": "q3",
+        "question": "HTTP status code 404 means 'Not Found'.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "90d80f58-c9c6-4467-9e22-0c6205bc3cf6"
+      },
+      {
+        "id": "q4",
+        "question": "Which HTTP method is idempotent?",
+        "options": [
+          "POST",
+          "PUT",
+          "PATCH",
+          "DELETE"
+        ],
+        "correctAnswer": "PUT",
+        "uuid": "c17874ca-d280-4287-9dc3-2d4c6f52e9a8"
+      },
+      {
+        "id": "q5",
+        "question": "APIs typically exchange data in which format?",
+        "options": [
+          "XML",
+          "CSV",
+          "JSON",
+          "TXT"
+        ],
+        "correctAnswer": "JSON",
+        "uuid": "620f10ae-4b85-4467-a08e-316b6ed9c733"
+      },
+      {
+        "id": "q6",
+        "question": "CORS is a security mechanism used in APIs.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "aa62dcc2-60bd-4e07-bd55-c27c3f09fbb7"
+      },
+      {
+        "id": "q7",
+        "question": "What status code indicates success?",
+        "options": [
+          "200",
+          "301",
+          "400",
+          "500"
+        ],
+        "correctAnswer": "200",
+        "uuid": "59126d3f-5dc3-445a-8038-808bda8f90a0"
+      },
+      {
+        "id": "q8",
+        "question": "Which header is used to send authorization tokens?",
+        "options": [
+          "Auth-Token",
+          "Authorization",
+          "Access-Key",
+          "Bearer"
+        ],
+        "correctAnswer": "Authorization",
+        "uuid": "5e0964f7-4dba-4a9a-89fc-524f8f49e9fb"
+      },
+      {
+        "id": "q9",
+        "question": "An API endpoint represents a specific resource URL.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "bec00a1d-bd34-47d5-a2e1-e3290a9e189b"
+      },
+      {
+        "id": "q10",
+        "question": "HTTP is a stateful protocol.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "uuid": "578475d4-54e1-4af2-9502-c8faab20daf7"
+      }
+    ],
+    "uuid": "6fb89712-0769-433b-8a98-f4a04aa3e9b1"
+  },
+  {
+    "id": "reactjs901",
+    "courseTitle": "React.js Basics",
+    "description": "Evaluate your knowledge of React.js fundamentals and concepts.",
+    "image": "/assets/quiz-09.png",
+    "duration": 20,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "React is a JavaScript library for building user interfaces.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "17afc7b2-d5ee-4b36-b6e3-4afdd88f601b"
+      },
+      {
+        "id": "q2",
+        "question": "What is JSX?",
+        "options": [
+          "A JavaScript extension syntax",
+          "A CSS preprocessor",
+          "A database query language",
+          "A testing framework"
+        ],
+        "correctAnswer": "A JavaScript extension syntax",
+        "uuid": "49c186bb-4fc3-43b7-8c8c-23454d036c25"
+      },
+      {
+        "id": "q3",
+        "question": "Components in React can be either class-based or functional.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "2fd3c08c-747e-424c-ba93-07609364c931"
+      },
+      {
+        "id": "q4",
+        "question": "Which hook is used to manage state in functional components?",
+        "options": [
+          "useEffect",
+          "useState",
+          "useContext",
+          "useReducer"
+        ],
+        "correctAnswer": "useState",
+        "uuid": "1a4ab68d-659c-48a5-8163-9240730eaff1"
+      },
+      {
+        "id": "q5",
+        "question": "Props are used to pass data from parent to child components.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "4d7eb997-cc2b-49a9-91ec-76f628c5060e"
+      },
+      {
+        "id": "q6",
+        "question": "What method is used to render a React component to the DOM?",
+        "options": [
+          "React.createElement()",
+          "ReactDOM.render()",
+          "React.renderComponent()",
+          "React.mount()"
+        ],
+        "correctAnswer": "ReactDOM.render()",
+        "uuid": "8f897e30-20cb-463f-a3ed-327f3e92432f"
+      },
+      {
+        "id": "q7",
+        "question": "Which lifecycle method is called after a component is mounted?",
+        "options": [
+          "componentDidMount",
+          "componentWillMount",
+          "componentDidUpdate",
+          "componentWillUnmount"
+        ],
+        "correctAnswer": "componentDidMount",
+        "uuid": "59efb193-cb5d-4594-9125-858c7ddf4e54"
+      },
+      {
+        "id": "q8",
+        "question": "State updates in React are asynchronous.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "6a89ba51-6544-42c9-84c4-86c0d071d5d1"
+      },
+      {
+        "id": "q9",
+        "question": "Which of the following is used for routing in React applications?",
+        "options": [
+          "React Router",
+          "Redux",
+          "Axios",
+          "Webpack"
+        ],
+        "correctAnswer": "React Router",
+        "uuid": "c56cca8f-29b5-4c9d-84e3-0776045e7df4"
+      },
+      {
+        "id": "q10",
+        "question": "Keys in React lists help identify which items have changed.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "248bec4c-6ef7-4705-ba2e-82a8068cff99"
+      }
+    ],
+    "uuid": "9801d47f-d944-4a08-af52-5d9faa9a4d2e"
+  },
+  {
+    "id": "css1001",
+    "courseTitle": "CSS Fundamentals",
+    "description": "Test your knowledge of CSS styling and layout techniques.",
+    "image": "/assets/quiz-10.png",
+    "duration": 20,
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "CSS stands for Cascading Style Sheets.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "cbdfe59e-1457-4b50-890b-b82b0839898d"
+      },
+      {
+        "id": "q2",
+        "question": "Which property is used to change the text color?",
+        "options": [
+          "text-color",
+          "color",
+          "font-color",
+          "text-style"
+        ],
+        "correctAnswer": "color",
+        "uuid": "009fc50e-260d-4e34-bfca-6420d2326215"
+      },
+      {
+        "id": "q3",
+        "question": "The box model includes margin, border, padding, and content.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "de0cd552-9fea-4fe2-9dfb-0b0c8bef3d2d"
+      },
+      {
+        "id": "q4",
+        "question": "Which property is used to create space between elements?",
+        "options": [
+          "padding",
+          "margin",
+          "spacing",
+          "gap"
+        ],
+        "correctAnswer": "margin",
+        "uuid": "ed2c66b9-a932-4d8d-bdb1-9ebda70b99fb"
+      },
+      {
+        "id": "q5",
+        "question": "Flexbox is used for creating flexible layouts.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "67edf420-f1b9-49e2-84a8-fe4771e048f3"
+      },
+      {
+        "id": "q6",
+        "question": "Which CSS property controls the size of text?",
+        "options": [
+          "text-size",
+          "font-size",
+          "text-style",
+          "size"
+        ],
+        "correctAnswer": "font-size",
+        "uuid": "eace1ab6-0e26-4abb-abbe-74c7fc322c17"
+      },
+      {
+        "id": "q7",
+        "question": "What does 'z-index' control?",
+        "options": [
+          "Element size",
+          "Stacking order",
+          "Font weight",
+          "Border width"
+        ],
+        "correctAnswer": "Stacking order",
+        "uuid": "39edeefd-48d5-4a37-9004-0a10bc1c1a5d"
+      },
+      {
+        "id": "q8",
+        "question": "CSS Grid is a two-dimensional layout system.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "8242bef0-31d9-4876-ba8a-f41da7c94281"
+      },
+      {
+        "id": "q9",
+        "question": "Which selector has the highest specificity?",
+        "options": [
+          "Element",
+          "Class",
+          "ID",
+          "Universal"
+        ],
+        "correctAnswer": "ID",
+        "uuid": "3a4e8cab-a83f-49db-bfc8-a41a6a64bb12"
+      },
+      {
+        "id": "q10",
+        "question": "Media queries are used for responsive design.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "8e7a20f5-df5a-41a9-899d-9d82a5bad7fe"
+      }
+    ],
+    "uuid": "42d550e6-dc59-440e-be80-118189022e3c"
+  },
+  {
+    "id": "python1101",
+    "courseTitle": "Python Essentials",
+    "description": "Assess your understanding of Python programming basics.",
+    "image": "/assets/quiz-11.png",
+    "duration": 25,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Python is an interpreted language.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "e70527dd-ecc5-4a85-b262-e00b79289462"
+      },
+      {
+        "id": "q2",
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+          "function",
+          "def",
+          "func",
+          "define"
+        ],
+        "correctAnswer": "def",
+        "uuid": "71d156e3-6b58-45a1-89e0-69b7539afbb8"
+      },
+      {
+        "id": "q3",
+        "question": "Python uses indentation to define code blocks.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "62c4770f-231e-44e7-a53b-11494ddcf4ac"
+      },
+      {
+        "id": "q4",
+        "question": "Which data type is mutable in Python?",
+        "options": [
+          "Tuple",
+          "String",
+          "List",
+          "Integer"
+        ],
+        "correctAnswer": "List",
+        "uuid": "9d0cb1cd-1447-438a-8017-acc4f1d07cdb"
+      },
+      {
+        "id": "q5",
+        "question": "What is the output of: print(type([]))?",
+        "options": [
+          "<class 'array'>",
+          "<class 'list'>",
+          "<class 'tuple'>",
+          "<class 'dict'>"
+        ],
+        "correctAnswer": "<class 'list'>",
+        "uuid": "3117f7e8-4afe-4652-95a6-e1e0c6e7031e"
+      },
+      {
+        "id": "q6",
+        "question": "Python is case-sensitive.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "874b3cae-0d6c-4484-816b-608a64b8c939"
+      },
+      {
+        "id": "q7",
+        "question": "Which operator is used for floor division?",
+        "options": [
+          "/",
+          "//",
+          "%",
+          "**"
+        ],
+        "correctAnswer": "//",
+        "uuid": "511264c6-b2fc-4545-b132-c48112f00828"
+      },
+      {
+        "id": "q8",
+        "question": "The 'self' parameter refers to the instance of a class.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "2c4234c6-e934-4c46-92d2-4eccdf988413"
+      },
+      {
+        "id": "q9",
+        "question": "Which method is used to add an item to a list?",
+        "options": [
+          "add()",
+          "append()",
+          "insert()",
+          "push()"
+        ],
+        "correctAnswer": "append()",
+        "uuid": "fb68f8e8-8e58-4006-9c30-9d864af899a2"
+      },
+      {
+        "id": "q10",
+        "question": "Python supports multiple inheritance.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "d0ebe45f-cd58-437e-9442-d0ecc0d6a75f"
+      }
+    ],
+    "uuid": "0a1c5a4e-6dd0-4b48-9273-0d0ac147a6d2"
+  },
+  {
+    "id": "sql1201",
+    "courseTitle": "SQL Database Queries",
+    "description": "Evaluate your SQL query writing and database knowledge.",
+    "image": "/assets/quiz-12.png",
+    "duration": 20,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "SQL stands for Structured Query Language.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "699fd2c4-ceaf-417e-9970-d94a0069baab"
+      },
+      {
+        "id": "q2",
+        "question": "Which command is used to retrieve data from a database?",
+        "options": [
+          "GET",
+          "SELECT",
+          "FETCH",
+          "RETRIEVE"
+        ],
+        "correctAnswer": "SELECT",
+        "uuid": "46697729-3232-466d-b671-7af85ead30e9"
+      },
+      {
+        "id": "q3",
+        "question": "The WHERE clause is used to filter records.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "49d9d76d-2eea-407b-a01e-2d361def510c"
+      },
+      {
+        "id": "q4",
+        "question": "Which keyword is used to sort results?",
+        "options": [
+          "SORT",
+          "ORDER BY",
+          "ARRANGE",
+          "GROUP BY"
+        ],
+        "correctAnswer": "ORDER BY",
+        "uuid": "54daf022-515e-4ccd-a7da-d1df00a91acb"
+      },
+      {
+        "id": "q5",
+        "question": "What does the JOIN clause do?",
+        "options": [
+          "Deletes records",
+          "Combines rows from two or more tables",
+          "Creates a new table",
+          "Updates records"
+        ],
+        "correctAnswer": "Combines rows from two or more tables",
+        "uuid": "6934123e-a649-4832-93a9-26833fec30ed"
+      },
+      {
+        "id": "q6",
+        "question": "PRIMARY KEY must contain unique values.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "3e1cbbfd-b8ae-4c1f-ae56-f54c221a961d"
+      },
+      {
+        "id": "q7",
+        "question": "Which command is used to add new records?",
+        "options": [
+          "ADD",
+          "INSERT",
+          "CREATE",
+          "PUT"
+        ],
+        "correctAnswer": "INSERT",
+        "uuid": "78e517ae-56f5-4b7e-acaa-1dd614d2a8e6"
+      },
+      {
+        "id": "q8",
+        "question": "NULL represents a missing or unknown value.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "ff447360-b7f5-4611-b196-30c6814f5e58"
+      },
+      {
+        "id": "q9",
+        "question": "Which function returns the number of rows?",
+        "options": [
+          "SUM()",
+          "COUNT()",
+          "TOTAL()",
+          "NUM()"
+        ],
+        "correctAnswer": "COUNT()",
+        "uuid": "04809012-0edd-42ad-9d6f-d92e016d60af"
+      },
+      {
+        "id": "q10",
+        "question": "FOREIGN KEY establishes a relationship between tables.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "c665ed8b-ed0e-4a56-8f86-ab1503fa8418"
+      }
+    ],
+    "uuid": "70fe74cb-1d2e-48ef-9e13-d3c179150c3a"
+  },
+  {
+    "id": "docker1301",
+    "courseTitle": "Docker Containers",
+    "description": "Test your understanding of Docker and containerization.",
+    "image": "/assets/quiz-13.png",
+    "duration": 15,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Docker is a containerization platform.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "85b0deaa-497b-4751-a10a-40e83cc51c92"
+      },
+      {
+        "id": "q2",
+        "question": "Which file defines a Docker image?",
+        "options": [
+          "docker.json",
+          "Dockerfile",
+          "container.conf",
+          "image.yml"
+        ],
+        "correctAnswer": "Dockerfile",
+        "uuid": "ef7a78b1-b038-4436-9e99-221c63199e5e"
+      },
+      {
+        "id": "q3",
+        "question": "Containers are lightweight and portable.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "be4114c5-eaa0-4979-9813-c36d13dcbf90"
+      },
+      {
+        "id": "q4",
+        "question": "Which command is used to build a Docker image?",
+        "options": [
+          "docker create",
+          "docker build",
+          "docker make",
+          "docker compile"
+        ],
+        "correctAnswer": "docker build",
+        "uuid": "200e8dae-5013-41c9-ab2c-bbcc1e52a12c"
+      },
+      {
+        "id": "q5",
+        "question": "What does 'docker run' do?",
+        "options": [
+          "Stops a container",
+          "Creates and starts a container",
+          "Deletes an image",
+          "Lists containers"
+        ],
+        "correctAnswer": "Creates and starts a container",
+        "uuid": "d897fd82-b3b1-46c0-8a4c-c1d20559ceb5"
+      },
+      {
+        "id": "q6",
+        "question": "Docker images are immutable.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "7d9fa4be-bc29-4469-804a-6b7c5543e5c0"
+      },
+      {
+        "id": "q7",
+        "question": "Which command lists running containers?",
+        "options": [
+          "docker ls",
+          "docker ps",
+          "docker list",
+          "docker show"
+        ],
+        "correctAnswer": "docker ps",
+        "uuid": "49d79576-20c8-49f6-b7dd-6f0377bd5cc1"
+      },
+      {
+        "id": "q8",
+        "question": "Docker Hub is a registry for Docker images.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "3e849aa9-8cbf-4d58-a5e4-edf07d8f8c30"
+      },
+      {
+        "id": "q9",
+        "question": "Which instruction sets the base image in a Dockerfile?",
+        "options": [
+          "BASE",
+          "FROM",
+          "IMAGE",
+          "USE"
+        ],
+        "correctAnswer": "FROM",
+        "uuid": "9189954d-0e7b-43ea-ba31-af2241a47f07"
+      },
+      {
+        "id": "q10",
+        "question": "Volumes are used to persist data in Docker.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "e669a36c-eed4-4073-abef-f44e7d909d79"
+      }
+    ],
+    "uuid": "56ca83cc-6cfa-4f01-a598-8768722948e0"
+  },
+  {
+    "id": "mongodb1401",
+    "courseTitle": "MongoDB Basics",
+    "description": "Assess your knowledge of MongoDB and NoSQL databases.",
+    "image": "/assets/quiz-14.png",
+    "duration": 20,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "MongoDB is a NoSQL database.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "32139f2a-b831-4301-9f18-c0f7fff0d344"
+      },
+      {
+        "id": "q2",
+        "question": "What format does MongoDB use to store data?",
+        "options": [
+          "XML",
+          "JSON",
+          "BSON",
+          "CSV"
+        ],
+        "correctAnswer": "BSON",
+        "uuid": "96b0576b-6a17-49a4-91b0-93b6def492e0"
+      },
+      {
+        "id": "q3",
+        "question": "Collections in MongoDB are similar to tables in SQL.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "d136ee57-1a7b-454d-bff5-0355f7a2e7cb"
+      },
+      {
+        "id": "q4",
+        "question": "Which method is used to insert a document?",
+        "options": [
+          "insert()",
+          "insertOne()",
+          "add()",
+          "create()"
+        ],
+        "correctAnswer": "insertOne()",
+        "uuid": "b703333f-c548-4731-89f9-3f0d1ddddca9"
+      },
+      {
+        "id": "q5",
+        "question": "What is the default primary key in MongoDB?",
+        "options": [
+          "id",
+          "_id",
+          "primary_key",
+          "key"
+        ],
+        "correctAnswer": "_id",
+        "uuid": "53c5cb49-bfb1-4464-906f-5ce0eb04a53a"
+      },
+      {
+        "id": "q6",
+        "question": "MongoDB supports indexing.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "d3ee8c6c-2255-413f-b90e-4dce75b169c8"
+      },
+      {
+        "id": "q7",
+        "question": "Which method is used to query documents?",
+        "options": [
+          "get()",
+          "find()",
+          "query()",
+          "select()"
+        ],
+        "correctAnswer": "find()",
+        "uuid": "4a45ac4c-30bd-40b7-a204-d528cb2e8edf"
+      },
+      {
+        "id": "q8",
+        "question": "MongoDB is schema-less.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "9314c641-b490-4055-8613-66b2a5c0bca4"
+      },
+      {
+        "id": "q9",
+        "question": "Which operator is used for greater than comparison?",
+        "options": [
+          "$gt",
+          "$gte",
+          "$greater",
+          "$more"
+        ],
+        "correctAnswer": "$gt",
+        "uuid": "1732a8d5-98f7-4f3d-99fd-7c17df890fc3"
+      },
+      {
+        "id": "q10",
+        "question": "Aggregation pipelines are used for complex queries.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "2067b612-82eb-47c3-9046-216da8d3ea92"
+      }
+    ],
+    "uuid": "60b9668b-4592-4685-b9d3-2c93c4f71c1c"
+  },
+  {
+    "id": "security1501",
+    "courseTitle": "Web Security Basics",
+    "description": "Test your understanding of web security concepts and best practices.",
+    "image": "/assets/quiz-15.png",
+    "duration": 25,
+    "difficulty": "hard",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "HTTPS encrypts data between client and server.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "3b655c87-4575-40c7-b012-8872b674ed42"
+      },
+      {
+        "id": "q2",
+        "question": "What does XSS stand for?",
+        "options": [
+          "Cross-Site Scripting",
+          "External Script System",
+          "XML Security Standard",
+          "Cross-Server Sync"
+        ],
+        "correctAnswer": "Cross-Site Scripting",
+        "uuid": "1ce25771-4de7-40cf-9c0f-383db8c034be"
+      },
+      {
+        "id": "q3",
+        "question": "SQL injection attacks exploit database vulnerabilities.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "5457699b-6cf5-482d-bf5e-48da83ef29a6"
+      },
+      {
+        "id": "q4",
+        "question": "Which header helps prevent clickjacking attacks?",
+        "options": [
+          "X-Frame-Options",
+          "Content-Type",
+          "Authorization",
+          "Accept"
+        ],
+        "correctAnswer": "X-Frame-Options",
+        "uuid": "cb6cb06a-3f40-4b53-abb9-b6191c96b826"
+      },
+      {
+        "id": "q5",
+        "question": "What does CSRF stand for?",
+        "options": [
+          "Cross-Site Request Forgery",
+          "Client-Side Resource Fetch",
+          "Certified Security Request Form",
+          "Cross-Server Request Format"
+        ],
+        "correctAnswer": "Cross-Site Request Forgery",
+        "uuid": "b420a225-a43d-4107-bd28-c9c52b17bc29"
+      },
+      {
+        "id": "q6",
+        "question": "JWT tokens should be stored in localStorage for security.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "uuid": "4f65b08d-ba9b-42ff-9911-32e7035b00cb"
+      },
+      {
+        "id": "q7",
+        "question": "Which HTTP method is considered safe and idempotent?",
+        "options": [
+          "POST",
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "correctAnswer": "GET",
+        "uuid": "1f740ada-f21e-4ba0-8719-54116cb4fbab"
+      },
+      {
+        "id": "q8",
+        "question": "CORS prevents unauthorized cross-origin requests.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "6edd6188-58cc-43f1-8df0-b317ce70c9c3"
+      },
+      {
+        "id": "q9",
+        "question": "Which algorithm is commonly used for password hashing?",
+        "options": [
+          "MD5",
+          "SHA-1",
+          "bcrypt",
+          "Base64"
+        ],
+        "correctAnswer": "bcrypt",
+        "uuid": "ab44a2e8-dede-4022-bccb-eb92546c91af"
+      },
+      {
+        "id": "q10",
+        "question": "Rate limiting helps prevent DDoS attacks.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "uuid": "f90145b6-43e6-4517-85da-dcb5927972ce"
+      }
+    ],
+    "uuid": "8ff2525e-2385-4edd-b730-93bc09afc146"
   }
 ]
