@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useQuizStore } from "../../../store/useQuizStore";
 import { fetchQuizzes } from "../../../lib/fetchQuizzes";
 import { Quiz } from "../../../lib/types";
@@ -29,7 +30,7 @@ export default function QuizQuestions({
     markUnanswered,
   } = useQuizStore();
 
-  /* ✅ 1. Resolve the dynamic route param once */
+
   useEffect(() => {
     let active = true;
     params.then((p) => {
@@ -40,24 +41,29 @@ export default function QuizQuestions({
     };
   }, [params]);
 
-  /* ✅ 2. Load quiz only if not stored in Zustand */
-  useEffect(() => {
-    const loadQuiz = async () => {
-      if (!resolvedParams || Quiz) {
-        setLoading(false);
-        return;
-      }
 
+useEffect(() => {
+  const loadQuiz = async () => {
+    if (!resolvedParams) {
+      setLoading(false);
+      return;
+    }
+
+    if (Quiz && Quiz.id !== resolvedParams.id) {
+      setQuiz(null as any); 
+    }
+
+    if (!Quiz || Quiz.id !== resolvedParams.id) {
       const data = await fetchQuizzes();
       const found = data.find((q) => q.id === resolvedParams.id);
       if (found) setQuiz(found);
-      setLoading(false);
-    };
+    }
+    setLoading(false);
+  };
 
-    loadQuiz();
-  }, [resolvedParams, Quiz, setQuiz]);
+  loadQuiz();
+}, [resolvedParams, Quiz, setQuiz]);
 
-  /* ✅ 3. Auto-redirect if all questions already answered */
   useEffect(() => {
     if (!Quiz || !resolvedParams) return;
 
@@ -69,15 +75,42 @@ export default function QuizQuestions({
     }
   }, [Quiz, answers, resolvedParams, router]);
 
-  /* ✅ 4. Loading & fallback handling */
+
   if (loading || !resolvedParams) {
     return (
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="flex items-center justify-center min-h-screen text-muted-foreground"
+        className="min-h-screen bg-gradient-to-br from-background to-muted/20 flex items-center justify-center p-4"
       >
-        Loading quiz...
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 max-w-6xl w-full">
+          {/* Navigation Dots Skeleton */}
+          <div className="flex lg:flex-col gap-2">
+            {Array.from({ length: 10 }).map((_, index) => (
+              <Skeleton key={index} className="w-8 h-8 rounded-full" />
+            ))}
+          </div>
+
+          {/* Main Quiz Card Skeleton */}
+          <div className="flex-1 bg-card rounded-2xl shadow-xl border p-4 lg:p-8 space-y-4 lg:space-y-6">
+            <Skeleton className="h-8 w-1/2 mx-auto" />
+            <Skeleton className="h-4 w-1/4 mx-auto" />
+            <Skeleton className="h-3 w-full rounded-full" />
+            <Skeleton className="h-6 w-3/4" />
+            <div className="space-y-3">
+              {Array.from({ length: 4 }).map((_, index) => (
+                <Skeleton key={index} className="h-12 w-full rounded-lg" />
+              ))}
+            </div>
+            <div className="flex justify-between items-center pt-4">
+              <Skeleton className="h-10 w-20" />
+              <div className="flex gap-3">
+                <Skeleton className="h-10 w-16" />
+                <Skeleton className="h-10 w-20" />
+              </div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     );
   }

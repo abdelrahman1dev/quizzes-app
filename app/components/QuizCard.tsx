@@ -34,8 +34,9 @@ export default function QuizCard({ quiz }: QuizCardProps) {
             <div className="space-y-4">
               <div className="relative h-48 overflow-hidden rounded-lg shadow-inner transition-all duration-300 group-hover:shadow-lg">
                 <Image
-                  src={quiz.image}
+                  src={ "https://imageplaceholder.net/600x400/eeeeee"}
                   alt={quiz.courseTitle}
+                  
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />

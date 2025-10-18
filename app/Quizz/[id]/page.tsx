@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, use } from "react";
-
+import { Skeleton } from "@/components/ui/skeleton";
 
 import { fetchQuizzes } from "../../lib/fetchQuizzes";
 import { Quiz } from "../../lib/types";
@@ -20,6 +20,7 @@ import {
 export default function QuizPage({ params }: { params: Promise<{ id: string }> }) {
 
   const [Quiz, setQuiz] = useState<Quiz | null>(null);
+  const [loading, setLoading] = useState(true);
   const resolvedParams = use(params);
   const { id } = resolvedParams;
 
@@ -32,9 +33,32 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
     fetchQuizzes().then((data) => {
       const found = data.find((q) => q.id === id);
       setQuiz(found || null);
+      setLoading(false);
     });
   }, [id]);
 
+
+  if (loading) {
+    return (
+      <section className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-4">
+        <div className="max-w-4xl w-full bg-card rounded-lg shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            <Skeleton className="h-64 w-96 rounded-2xl" />
+            <div className="flex-1 space-y-4">
+              <Skeleton className="h-10 w-3/4" />
+              <Skeleton className="h-6 w-full" />
+              <Skeleton className="h-6 w-2/3" />
+              <div className="flex gap-4">
+                <Skeleton className="h-8 w-24 rounded-full" />
+                <Skeleton className="h-8 w-24 rounded-full" />
+              </div>
+              <Skeleton className="h-12 w-32" />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   if (!Quiz) {
     return (

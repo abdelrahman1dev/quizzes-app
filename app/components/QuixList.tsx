@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { fetchQuizzes } from "../lib/fetchQuizzes";
 import { Quiz } from "../lib/types";
 import QuizCard from "./QuizCard";
+import QuizCardSkeleton from "./QuizCardSkeleton";
 
 export default function QuizList() {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
@@ -17,8 +18,10 @@ export default function QuizList() {
 
   if (loading)
     return (
-      <div className="text-center py-16 text-muted-foreground text-lg">
-        Loading quizzes...
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {Array.from({ length: 6 }).map((_, index) => (
+          <QuizCardSkeleton key={index} />
+        ))}
       </div>
     );
 
