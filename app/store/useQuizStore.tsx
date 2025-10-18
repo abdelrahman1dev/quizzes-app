@@ -22,7 +22,7 @@ interface QuizState {
 }
 
 export const useQuizStore = create<QuizState>()(
-  persist(
+ 
     (set, get) => ({
       quiz: null,
       currentIndex: 0,
@@ -63,10 +63,6 @@ export const useQuizStore = create<QuizState>()(
         if (index >= 0 && index < total) set({ currentIndex: index });
       },
       reset: () => set({ quiz: null, currentIndex: 0, answers: {} }),
-    }),
-    {
-      name: "quiz-storage",
-      storage: createJSONStorage(() => localStorage),
     }
   )
 );
