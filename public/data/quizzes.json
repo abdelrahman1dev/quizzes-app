@@ -1,0 +1,143 @@
+[
+  {
+    "id": "js101",
+    "courseTitle": "JavaScript Basics",
+    "description": "Test your fundamental JavaScript knowledge.",
+    "image": "/assets/quiz-03.png",
+    "duration": 15,
+    "difficulty": "hard",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Which of the following is NOT a JavaScript data type?",
+        "options": [
+          "Number",
+          "String",
+          "Boolean",
+          "Character"
+        ],
+        "correctAnswer": "Character",
+        "uuid": "a7d5b4d8-5c04-4e91-b699-3e9a0f31508e"
+      },
+      {
+        "id": "q2",
+        "question": "What will `typeof null` return in JavaScript?",
+        "options": [
+          "'null'",
+          "'undefined'",
+          "'object'",
+          "'number'"
+        ],
+        "correctAnswer": "'object'",
+        "uuid": "a6112255-ee36-4460-a508-136b0ce372a5"
+      },
+      {
+        "id": "q3",
+        "question": "Which keyword is used to declare a constant in JavaScript?",
+        "options": [
+          "let",
+          "var",
+          "constant",
+          "const"
+        ],
+        "correctAnswer": "const",
+        "uuid": "e1df0514-2044-48fe-b9d3-da1948103756"
+      }
+    ],
+    "uuid": "4581ebb4-e124-465e-aaa6-35a70a24416b"
+  },
+  {
+    "id": "react201",
+    "courseTitle": "React Fundamentals",
+    "description": "Assess your understanding of React core concepts.",
+    "image": "/assets/quiz-02.png",
+    "duration": 10,
+    "difficulty": "easy",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the purpose of the `useState` hook?",
+        "options": [
+          "To perform side effects in a component",
+          "To store and update component state",
+          "To manage routing",
+          "To fetch data from APIs"
+        ],
+        "correctAnswer": "To store and update component state",
+        "uuid": "9f0749c3-8e7d-4eae-87f9-1f58f6661dbe"
+      },
+      {
+        "id": "q2",
+        "question": "What must be unique for each list item in React?",
+        "options": [
+          "index",
+          "key",
+          "id",
+          "value"
+        ],
+        "correctAnswer": "key",
+        "uuid": "f88481f0-3718-4540-beae-73dc8dd9b87b"
+      },
+      {
+        "id": "q3",
+        "question": "Which of the following is a valid React component?",
+        "options": [
+          "function myComponent() {}",
+          "const MyComponent = () => {}",
+          "function my_component() {}",
+          "const myComponent = React.component()"
+        ],
+        "correctAnswer": "const MyComponent = () => {}",
+        "uuid": "67159b7e-8152-4d29-882b-33051d6b9550"
+      }
+    ],
+    "uuid": "261eee90-38bb-4e12-994b-a02c3ed02eb3"
+  },
+  {
+    "id": "htmlcss301",
+    "courseTitle": "HTML & CSS Mastery",
+    "description": "Check your skills in front-end layout and styling.",
+    "image": "/assets/quiz-01.png",
+    "duration": 25,
+    "difficulty": "normal",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "options": [
+          "<style>",
+          "<css>",
+          "<script>",
+          "<link>"
+        ],
+        "correctAnswer": "<style>",
+        "uuid": "fb365861-7510-4f47-bf82-64c06ef09c92"
+      },
+      {
+        "id": "q2",
+        "question": "Which CSS property controls the text size?",
+        "options": [
+          "font-weight",
+          "font-style",
+          "text-size",
+          "font-size"
+        ],
+        "correctAnswer": "font-size",
+        "uuid": "b61eed84-cc59-47ec-b710-889bdc4db1ed"
+      },
+      {
+        "id": "q3",
+        "question": "What does the 'box-sizing: border-box' property do?",
+        "options": [
+          "Includes padding and border in total width and height",
+          "Adds margin to the element automatically",
+          "Resets all box properties",
+          "Increases box shadow effect"
+        ],
+        "correctAnswer": "Includes padding and border in total width and height",
+        "uuid": "e3539970-2479-4c53-b066-d1c758e1614b"
+      }
+    ],
+    "uuid": "a8fa6eac-db73-4656-b2c3-742614354d2b"
+  }
+]
